@@ -11,7 +11,8 @@ public class Program
         // BenchmarkRunner.Run<RegexPerformance>();
         // BenchmarkRunner.Run<StringAllocationSample>();
         // BenchmarkRunner.Run<MemorySamples>();
-        BenchmarkRunner.Run<ThreadingSamples>();
+        // BenchmarkRunner.Run<ThreadingSamples>();
+        BenchmarkRunner.Run<NuGetSamples>();
 
         var A = "abc";
         var B = "abc";
