@@ -1,12 +1,4 @@
-﻿
-using System.Security.Cryptography;
-using System.Text;
-using System.Text.RegularExpressions;
-using BenchmarkDotNet.Attributes;
-using BenchmarkDotNet.Jobs;
-using BenchmarkDotNet.Running;
-using BenchmarkDotNet.Diagnosers;
-using SkiaSharp;
+﻿using AsyncWizard.Benchmarks;
 
 namespace AsyncWizard;
 
@@ -18,7 +10,8 @@ public class Program
         // BenchmarkRunner.Run<TimersSample>();
         // BenchmarkRunner.Run<RegexPerformance>();
         // BenchmarkRunner.Run<StringAllocationSample>();
-        BenchmarkRunner.Run<MemorySamples>();
+        // BenchmarkRunner.Run<MemorySamples>();
+        BenchmarkRunner.Run<ThreadingSamples>();
 
         var A = "abc";
         var B = "abc";
