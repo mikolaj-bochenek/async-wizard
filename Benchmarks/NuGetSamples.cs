@@ -1,8 +1,4 @@
-﻿
-using BenchmarkDotNet.Configs;
-using YamlDotNet.Serialization;
-
-namespace AsyncWizard.Benchmarks;
+﻿namespace AsyncWizard.Benchmarks;
 
 [Config(typeof(Config))]
 public class NuGetSamples
