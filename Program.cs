@@ -10,7 +10,9 @@ public class Program
         // BenchmarkRunner.Run<StringAllocationSample>();
         // BenchmarkRunner.Run<MemorySamples>();
         // BenchmarkRunner.Run<ThreadingSamples>();
-        BenchmarkRunner.Run<NuGetSamples>();
+        // BenchmarkRunner.Run<NuGetSamples>();
+        // BenchmarkRunner.Run<DisassemblingSamples>();
+        BenchmarkRunner.Run<Branching>();
 
         var A = "abc";
         var B = "abc";
