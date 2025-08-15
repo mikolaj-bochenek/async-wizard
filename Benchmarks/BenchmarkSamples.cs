@@ -46,31 +46,3 @@ public class RegexPerformance
     [Benchmark]
     public bool IsMatch() => _regex.IsMatch("abcdefghijklmnopqrstuvwxyz123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ");
 }
-
-[MemoryDiagnoser]
-public class StringAllocationSample
-{
-    private const int N = 1000;
-
-    [Benchmark]
-    public string Concat()
-    {
-        string result = "";
-        for (int i = 0; i < N; i++)
-        {
-            result += "lorem";
-        }
-        return result;
-    }
-
-    [Benchmark]
-    public string StringBuilder()
-    {
-        var sb = new StringBuilder();
-        for (int i = 0; i < N; i++)
-        {
-            sb.Append("lorem");
-        }
-        return sb.ToString();
-    }
-}
