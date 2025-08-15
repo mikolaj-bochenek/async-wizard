@@ -12,12 +12,13 @@ public class Program
         // BenchmarkRunner.Run<ThreadingSamples>();
         // BenchmarkRunner.Run<NuGetSamples>();
         // BenchmarkRunner.Run<DisassemblingSamples>();
-        BenchmarkRunner.Run<Branching>();
+        // BenchmarkRunner.Run<Branching>();
+        BenchmarkRunner.Run<Fibonacci>();
 
-        var A = "abc";
-        var B = "abc";
+        // var A = "abc";
+        // var B = "abc";
 
-        Console.WriteLine(ReferenceEquals(A, B.ToUpper().ToLower())); // False: A and B are different references
-        Console.WriteLine(ReferenceEquals(A, B)); // True: A and B are the same references because of interning
+        // Console.WriteLine(ReferenceEquals(A, B.ToUpper().ToLower())); // False: A and B are different references
+        // Console.WriteLine(ReferenceEquals(A, B)); // True: A and B are the same references because of interning
     }
 }
