@@ -1,4 +1,4 @@
-namespace AsyncWizard;
+namespace AsyncWizard.Threading;
 
 public class ThreadPoolProcessingGuard
 {

@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace AsyncWizard;
+namespace AsyncWizard.Threading;
 
 [Description("Monitoring thread pool")]
 public class ThreadPoolMonitoringDemo

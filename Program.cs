@@ -15,8 +15,6 @@ public class Program
         // BenchmarkRunner.Run<Branching>();
         BenchmarkRunner.Run<Fibonacci>();
 
-        ThreadPoolMonitoringDemo.Run();
-
         // var A = "abc";
         // var B = "abc";
 
